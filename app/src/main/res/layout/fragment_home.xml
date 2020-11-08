@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:orientation="vertical"
+    tools:context="com.example.cookingapp.MainActivity"
+    android:background="@color/contentBodyColor"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/contentBodyColor">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="0dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:fontFamily="@font/brandon_medium"
+                    android:gravity="center"
+                    android:textColor="@color/contentTextColor"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/recyclerView"
+                    android:orientation="horizontal">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/contentBodyColor"
+                    >
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/brandon_medium"
+                        android:id="@+id/txt_bestdeal_item"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="34sp"
+                        android:textColor="@color/contentTextColor"
+                        android:textSize="18dp"
+                        android:text="เมนูล่าสุด"/>
+
+                    <com.asksira.loopingviewpager.LoopingViewPager
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/loopView"
+                        app:isInfinite="true"
+                        app:autoScroll="true"
+                        app:scrollInterval="2500"
+                        app:viewpagerAspectRatio="1.33">
+
+                    </com.asksira.loopingviewpager.LoopingViewPager>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/contentBodyColor"
+                    >
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/brandon_medium"
+                        android:id="@+id/txt_bestdeal_item2"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="34sp"
+                        android:textColor="@color/contentTextColor"
+                        android:textSize="18dp"
+                        android:text="เมนูยอดนิยม"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/recyclerView2"
+                        android:orientation="horizontal"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

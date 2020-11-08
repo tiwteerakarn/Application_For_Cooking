@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">A Application for Cooking</string>
+
+    <string name="facebook_app_id">551522875728146</string>
+    <string name="fb_login_protocol_scheme">fb551522875728146</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="Posts">โพส</string>
+    <string name="Followers">ผู้ติดตาม</string>
+    <string name="Following">กำลังติดตาม</string>
+    <string name="Follow">ติดตาม</string>
+    <string name="Unfollow">ยกเลิกติดตาม</string>
+    <string name="EditProfile">แก้ไขโปรไฟล์</string>
+    <string name="SettingOptions">Options</string>
+    <string name="SignOut">ออกจากระบบ</string>
+    <string name="UserName">User name</string>
+    <string name="DisplayName">Display name</string>
+    <string name="Phone">Phone</string>
+    <string name="Email">Email</string>
+    <string name="Website">Website</string>
+    <string name="Description">Description</string>
+    <string name="Password">Password</string>
+    <string name="ConfirmPassword">Confirm password</string>
+    <string name="Login">Login</string>
+    <string name="Register">Register</string>
+    <string name="private_information">ข้อมูลส่วนตัว</string>
+    <string name="AccountSettings">Account settings</string>
+    <string name="ChangePhoto">เปลี่ยนรูป</string>
+    <string name="Gallery">Gallery</string>
+    <string name="Photo">Photo</string>
+    <string name="Video">Video</string>
+    <string name="Next">ถัดไป</string>
+    <string name="filePath">mPath</string>
+    <string name="mediaData">media</string>
+    <string name="profilePhoto">ProfilePhoto</string>
+    <string name="Share">โพส</string>
+    <string name="speech_prompt">Say something!</string>
+    <string name="Caption">Write a caption</string>
+    <string name="UploadProfilePhoto">UPLOAD_PROFILE</string>
+    <string name="updatingProfile">Updating profile</string>
+    <string name="Comments">Comments</string>
+    <string name="PostComment">Post</string>
+    <string name="AddComment">เพิ่มข้อความ…</string>
+    <string name="Wait">รอสักครู่…</string>
+    <string name="Search">ค้นหา…</string>
+
+    <!---Fragment names-->
+    <string name="GalleryFragment">GALLERY</string>
+    <string name="PhotoFragment">PHOTO</string>
+    <string name="VideoFragment">VIDEO</string>
+
+
+    <!---Fire base-->
+    <string name="users_node">users</string>
+    <string name="user_account_settings_node">user_account_settings</string>
+    <string name="user_photos_node">user_post</string>
+    <string name="user_videos_node">user_videos</string>
+    <string name="videos_node">videos</string>
+    <string name="photos_node">post</string>
+    <string name="usernameField">username</string>
+    <string name="fieldLikes">likes</string>
+    <string name="fieldComments">comment</string>
+    <string name="fieldComment">comment</string>
+    <string name="dateField">date_added</string>
+    <string name="emailField">email</string>
+    <string name="users_id">user_id</string>
+    <string name="displayNameField">display_name</string>
+    <string name="descriptionField">description</string>
+    <string name="websiteField">website</string>
+    <string name="phoneNoField">phone_number</string>
+    <string name="profilePhotoField">profile_photo</string>
+    <string name="node_followers">ผู้ติดตาม</string>
+    <string name="node_following">ติดตาม</string>
+
+    <string name="login">LOGIN</string>
+    <string name="signup">SIGNUP</string>
+    <string name="hitEmail">EMAIL</string>
+    <string name="hintPassword">PASSWORD</string>
+    <string name="hindConfirmPassword">CONFIRM PASSWORD</string>
+    <string name="companyName">แอปพลิเคชันสำหรับการทำอาหาร</string>
+    <string name="forgotPassword">FORGOT PASSWORD</string>
+    <string name="termsAndCondition">TERMS &amp; CONDITION</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

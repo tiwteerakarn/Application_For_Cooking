@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F2C6FA">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/textnameuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#232323"
+            android:text="ตั้งค่า VIP" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_below="@+id/textnameuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:hintEnabled="true"
+            android:hint="Point"
+            android:id="@+id/txt_follow"
+            >
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/setpoint"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_below="@+id/txt_follow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:hintEnabled="true"
+            android:hint="VIP"
+            android:id="@+id/txt_switchvip"
+            >
+
+
+        </com.google.android.material.switchmaterial.SwitchMaterial>
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_below="@+id/txt_switchvip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:hintEnabled="true"
+            android:hint="Banned"
+            android:id="@+id/txt_switchbanned"
+            >
+
+
+        </com.google.android.material.switchmaterial.SwitchMaterial>
+        <Button
+            android:id="@+id/button1"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/txt_switchbanned"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Save" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_below="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Close" />
+    </RelativeLayout>
+</LinearLayout>

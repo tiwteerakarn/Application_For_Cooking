@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="4dp"
+    android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/users_photo"
+        android:src="@drawable/ic_user"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="4dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp" />
+
+
+    <TextView
+        android:id="@+id/titlename_users"
+        android:textColor="@color/contentTextColor"
+        android:layout_toEndOf="@id/users_photo"
+        android:layout_marginStart="16dp"
+        tools:text="Option Name"
+        android:ellipsize="end"
+        android:layout_marginEnd="24dp"
+        android:layout_alignTop="@id/users_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/image_block"
+        android:text="บล็อค"
+        android:textSize="10dp"
+        android:layout_marginEnd="2dp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="4dp"
+        android:textColor="@color/colorRed"
+        android:background="@drawable/shape_rect06"
+        />
+    <TextView
+        android:id="@+id/image_check"
+        android:text="ติดตามแล้ว"
+        android:textSize="10dp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:padding="4dp"
+        android:textColor="@color/green247"
+        android:background="@drawable/shape_green"
+         />
+
+
+
+</RelativeLayout>

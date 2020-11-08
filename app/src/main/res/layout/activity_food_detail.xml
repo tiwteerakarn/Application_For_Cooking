@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FoodDetail.FoodDetailActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_laout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="@color/contentBodyColor"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/Collapsing"
+            app:expandedTitleTextAppearance="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:fitsSystemWindows="true"
+            app:contentScrim="#0d0e0d"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/food_detail_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnlike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_like"
+
+        app:backgroundTint="@color/white"
+        android:elevation="6dp"
+        app:layout_anchor="@id/app_bar_laout"
+        app:layout_anchorGravity="bottom|right|start"
+        app:pressedTranslationZ="12dp"
+        app:useCompatPadding="true"
+
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:background="@color/contentBodyColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/food_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:padding="12dp"
+                        android:text="Food Name"
+                        android:fontFamily="@font/brandon_medium"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="22dp"
+                        android:textStyle="bold"/>
+                    <com.borjabravo.readmoretextview.ReadMoreTextView
+                        android:id="@+id/food_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:padding="8dp"
+                        app:trimExpandedText="Show more"
+                        app:trimCollapsedText="Show less"
+                        app:trimMode="trimModeLength"
+                        app:trimLength="20"
+                        android:text="A Mobile Application for  Cooking A Mobile Application for  Cooking A Mobile Application for  Cooking"
+                        android:fontFamily="@font/brandon_medium"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold"/>
+                    <LinearLayout
+                        android:id="@+id/layout_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/img_user"
+                            android:layout_margin="4dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_user"/>
+                        <TextView
+                            android:id="@+id/food_user"
+                            android:layout_width="0dp"
+                            android:fontFamily="@font/brandon_medium"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="9"
+                            android:text="Admin"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="2dp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bt_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:layout_margin="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                  <RatingBar
+                      android:id="@+id/rating"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      style="@style/Widget.AppCompat.RatingBar.Indicator"
+                      android:numStars="5"
+                      android:stepSize="0.5"
+                      android:isIndicator="true"/>
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/txt_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="คะแนน"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:background="@color/dark_grey"
+                        android:id="@+id/txt_ingredient"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:padding="12dp"
+                        android:text="ส่วนผสม"
+                        android:textSize="18dp"
+                        android:textStyle="bold"/>
+                    <androidx.recyclerview.widget.RecyclerView
+
+                    android:id="@+id/listView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:background="@color/dark_grey"
+                        android:id="@+id/txt_direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:padding="12dp"
+                        android:text="ขั้นตอนการทำ"
+                        android:textSize="18dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+
+                        android:id="@+id/txt_direction_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:padding="12dp"
+                        android:text="1"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

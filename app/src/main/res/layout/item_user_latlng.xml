@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="4dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="4dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/contentBodyColor">
+        <ImageView
+            android:id="@+id/overflow"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+
+            android:src="@drawable/ic_more_vert_black_24dp" />
+        <TextView
+            android:id="@+id/hisname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/contentTextColor"
+            android:layout_alignRight="@+id/overflow"
+            android:text="His name"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            >
+
+        </TextView>
+        <TextView
+            android:id="@+id/histext"
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/contentTextColor"
+            android:text="Message"
+            android:textSize="12dp"
+            android:layout_below="@+id/hisname"
+            >
+
+        </TextView>
+        <TextView
+            android:id="@+id/hislatlng"
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/contentTextColor"
+            android:textSize="12dp"
+            android:text="Me"
+            android:layout_below="@+id/histext"
+            android:layout_marginBottom="4dp"
+            >
+
+        </TextView>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

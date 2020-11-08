@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="8dp"
+    android:layout_margin="8dp"
+    >
+
+    <RelativeLayout
+        android:background="#f8cbb3"
+        android:layout_width="280dp"
+        android:layout_height="140dp"
+        android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_home"/>
+    <TextView
+        android:id="@+id/name"
+        android:text="catalog name"
+        android:textColor="@color/contentTextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/image_view"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+        <RatingBar
+            android:id="@+id/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_toRightOf="@+id/image_view"
+            android:layout_marginLeft="10dp"
+            android:rating="4"
+            android:layout_below="@id/name"/>
+    <TextView
+        android:id="@+id/txt_follower"
+        android:text="follower"
+        android:textColor="@color/contentTextColor"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/image_view"
+        android:layout_below="@+id/ratingbar"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_margin="10dp"
+        />
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

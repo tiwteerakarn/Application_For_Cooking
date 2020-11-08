@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapp="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:layout_width="300dp"
+    android:background="@drawable/side_nav_bar"
+    android:layout_height="wrap_content"
+    android:id="@+id/contact_user">
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Name"
+            android:textColor="@color/whiteTextColor"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:layout_marginTop="90dp">
+
+        </TextView>
+        <com.google.android.material.button.MaterialButton
+
+            android:id="@+id/bt_fl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darkTextColor"
+            android:layout_marginTop="10dp">
+
+        </com.google.android.material.button.MaterialButton>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bt_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darkTextColor"
+
+            android:text="ข้อความ"
+            >
+
+        </com.google.android.material.button.MaterialButton>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bt_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darkTextColor"
+
+            android:text="บล็อค"
+            >
+
+        </com.google.android.material.button.MaterialButton>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bt_foodlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darkTextColor"
+
+            android:text="เมนูอาหาร"
+            >
+
+        </com.google.android.material.button.MaterialButton>
+</LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_photo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_user"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+</RelativeLayout>
